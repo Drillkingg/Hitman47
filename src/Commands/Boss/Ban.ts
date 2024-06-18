@@ -5,7 +5,7 @@ import { IArgs } from '../../Types'
     description: 'Bans/unban users',
     category: 'boss',
     cooldown: 5,
-    usage: 'ban --action=[ban/unban] [tag/quote users]',
+    usage: 'ban=[ban/unban] [tag/quote users]',
     exp: 15
 })
 export default class extends BaseCommand {
@@ -22,7 +22,7 @@ export default class extends BaseCommand {
         const action = flags[0].split('=')[1]
         if (action === '')
             return void M.reply(
-                `Provide the action of the ban. Example: *${this.client.config.prefix}ban --action=ban*`
+                `Provide the action of the ban. Example: *${this.client.config.prefix}ban=ban*`
             )
         if (!actions.includes(action.toLowerCase())) return void M.reply('Invalid action')
         let text = `🚦 *State: ${action.toLowerCase() === 'ban' ? 'BANNED' : 'UNBANNED'}*\n⚗ *Users:*\n`
