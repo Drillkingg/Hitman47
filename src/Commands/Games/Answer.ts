@@ -2,10 +2,10 @@ import { BaseCommand, Command, Message } from '../../Structures'
 
 @Command('answer', {
     description: 'answer',
-    aliases: ['ans'],
+    aliases: ['a'],
     usage: 'answer',
     exp: 10,
-    cooldown: 15,
+    cooldown: 7,
     category: 'games'
 })
 export default class extends BaseCommand {
