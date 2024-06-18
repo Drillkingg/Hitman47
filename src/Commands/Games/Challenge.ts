@@ -3,6 +3,7 @@ import { Command, BaseCommand, Message } from '../../Structures'
 @Command('challenge', {
     description: 'challenge someone for chess',
     usage: 'challenge',
+    aliases 'cha',
     category: 'games',
     cooldown: 10,
     exp: 20
