@@ -48,4 +48,5 @@ export type TCategory =
     | 'characters'
     | 'moderation'
     | 'educative'
-    | 'boss'
+    | 'owner'
+    | 'moderator'
