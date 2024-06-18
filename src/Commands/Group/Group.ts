@@ -1,8 +1,8 @@
 import { Command, BaseCommand, Message } from '../../Structures'
 
-@Command('group', {
+@Command('group h' {
     description: 'Get Group information',
-    usage: 'group',
+    usage: 'group=h',
     category: 'moderation',
     exp: 10
 })
