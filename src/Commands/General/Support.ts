@@ -9,13 +9,14 @@ interface CustomMessageContent {
 @Command('support', {
     description: 'gives the group links of support',
     usage: 'support',
+    Aliases: 'sp',
     category: 'general',
     exp: 10,
-    cooldown: 20
+    cooldown: 10
 })
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
-        const supportText = `*━━━❰ Support group❱━━━*\n\n... [Your add your group links] ...\nᚖ here ᚖ`;
+        const supportText = `*━━━❰ Support group❱━━━*\n\n... [https://chat.whatsapp.com/FOQCfG38w5o5gOLZO5518n] ...\nᚖ here ᚖ`;
 
         const footerText = '© Hitman47 Inc 2024';
 
