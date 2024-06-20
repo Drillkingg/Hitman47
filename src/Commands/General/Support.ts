@@ -15,7 +15,8 @@ interface CustomMessageContent {
 })
 export default class command extends BaseCommand {
     override execute = async ({ from, sender, message }: Message): Promise<void> => {
-        const supportText = `*━━━❰ Support group❱━━━*\n\n... [Your add your group links] ...\nᚖ here ᚖ`;
+        const supportText = `*━━━❰ Support group❱━━━*\n\n... [PRIVATEMUSICGRUP
+        https://chat.whatsapp.com/L23TUdGXo2UJLWUXVGb0ER] ...\nᚖ here ᚖ`;
 
         const footerText = '© Hitman47 Inc 2024';
 
